@@ -22,7 +22,7 @@ const Classement = () => {
 
     useEffect(() => {
         const getNewYear = async () => {
-            const response = await fetch(`http://ergast.com/api/f1/${selectedYear}/driverStandings.json`)
+            const response = await fetch(`https://ergast.com/api/f1/${selectedYear}/driverStandings.json`)
             if(response.ok){
                 const body = await response.json();
                 setPiloteRanking(body.MRData.StandingsTable.StandingsLists[0].DriverStandings)
