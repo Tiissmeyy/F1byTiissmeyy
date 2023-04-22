@@ -50,9 +50,9 @@ const NextRace = () => {
     minutes = minutes % 60;
     hours = hours % 24;
 
-    return `${padTo2Digits(days)} jours ${padTo2Digits(
+    return `${padTo2Digits(days)} days ${padTo2Digits(
       hours
-    )} heures ${padTo2Digits(minutes)} minutes ${padTo2Digits(seconds)} secondes`;
+    )} hours ${padTo2Digits(minutes)} minutes ${padTo2Digits(seconds)} seconds`;
   }
 
   function convertToTimestamp(dateStr, timeStr) {
