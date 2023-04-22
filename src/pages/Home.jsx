@@ -27,17 +27,17 @@ const Home = () => {
                 <Card 
                     name="Classement"
                     target="/app/classement"
-                    image="/src/assets/images/classement.jpg"
+                    image="/images/classement.jpg"
                 />
                 <Card 
                     name="Circuits"
                     target="/"
-                    image="/src/assets/images/circuit.jpg"
+                    image="/images/circuit.jpg"
                 />
                 <Card 
                     name="Historique"
                     target="/app/historique"
-                    image="/src/assets/images/1950f1.jpg"
+                    image="/images/1950f1.jpg"
                 />    
             </div>
             <NextRace />
