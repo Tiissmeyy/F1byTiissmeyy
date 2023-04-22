@@ -19,29 +19,19 @@ const Classement = () => {
     },[])
 
     useEffect(() => {
-        // const getNewYear = async () => {
-        //     const [driverStandingsResponse, constructorStandingsResponse] = await Promise.all([
-        //         fetch(`https://ergast.com/api/f1/${selectedYear}/driverStandings.json`),
-        //         fetch(`https://ergast.com/api/f1/${selectedYear}/constructorStandings.json`)
-        //     ]);
-    
-        //     if(driverStandingsResponse.ok && constructorStandingsResponse.ok){
-        //         const driverStandings = await driverStandingsResponse.json();
-        //         const constructorStandings = await constructorStandingsResponse.json();
-        //         setCurrentYear(selectedYear)
-        //         setPiloteRanking(driverStandings.MRData.StandingsTable.StandingsLists[0].DriverStandings)
-        //         setConstructorRanking(constructorStandings.MRData.StandingsTable.StandingsLists[0].ConstructorStandings)
-        //     }                        
-        // }
-
-        const getNewYear = async () => {
+            const getNewYear = async () => {
             try {
-               const [driverStandingsResponse, constructorStandingsResponse] = await Promise.all([
-                    fetch(`https://ergast.com/api/f1/${selectedYear}/driverStandings.json`),
-                    fetch(`https://ergast.com/api/f1/${selectedYear}/constructorStandings.json`)
-                ]);
+                let driverStandingsResponse
+                let constructorStandingsResponse
+                if(selectedYear){
+                    [driverStandingsResponse, constructorStandingsResponse] = await Promise.all([
+                        fetch(`https://ergast.com/api/f1/${selectedYear}/driverStandings.json`),
+                        fetch(`https://ergast.com/api/f1/${selectedYear}/constructorStandings.json`)
+                    ]); 
+                }
+               
             
-                if(driverStandingsResponse.ok && constructorStandingsResponse.ok){
+                if(selectedYear && driverStandingsResponse.ok && constructorStandingsResponse.ok){
                     const driverStandings = await driverStandingsResponse.json();
                     const constructorStandings = await constructorStandingsResponse.json();
                     setCurrentYear(selectedYear)
@@ -67,31 +57,31 @@ const Classement = () => {
         setToggleButton(arg)
     }
 
-    const piloteArray = piloteRanking && piloteRanking.map((el) => {
+    const piloteArray = piloteRanking && piloteRanking.map((el,index) => {
         return (
-            <>
-                <tr key={el.id} className={style.bodyTableLine}>
+            <React.Fragment key={index*100}>
+                <tr  className={style.bodyTableLine}>
                     <td>{el.positionText}</td>
                     <td>{el.Driver.givenName} {el.Driver.familyName}</td>
                     <td>{el.Constructors[0].name}</td>
                     <td>{el.points}</td>
                     <td>{el.wins}</td>
                 </tr>
-            </>
+            </React.Fragment>
             
         )
     })
 
-    const constructorArray = constructorRanking && constructorRanking.map((el) => {
+    const constructorArray = constructorRanking && constructorRanking.map((el,index) => {
         return (
-            <>
-                <tr key={el.id} className={style.bodyTableLine}>
+            <React.Fragment key={index}>
+                <tr  className={style.bodyTableLine}>
                     <td>{el.positionText}</td>
                     <td>{el.Constructor.name}</td>
                     <td>{el.points}</td>
                     <td>{el.wins}</td>
                 </tr>
-            </>
+            </React.Fragment>
             
         )
     })
