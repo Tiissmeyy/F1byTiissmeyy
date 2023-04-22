@@ -1,11 +1,12 @@
 import React from "react";
 import style from "./News.module.css"
+import monImage from "/src/assets/images/article-img/verstappen.jpeg"
 
 const News = () => {
     return (
         <div className={style.articleContainer}>
             <img 
-                src="../../images/article-img/verstappen.jpeg" 
+                src={monImage}
                 className={style.articleImage}    
             />
             <div>
