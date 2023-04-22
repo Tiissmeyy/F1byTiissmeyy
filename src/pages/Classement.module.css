@@ -32,3 +32,36 @@
 .selectorContainer input  {
     margin-right: 15px;
 }
+
+.buttonContainer {
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.activeButton {
+    background-color: #fa7d29;
+    color: #222;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.03rem;
+}
+
+.activeButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.unactiveButton {
+    color: #fa7d29;
+    background-color: #222;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.03rem;
+}
+
+.unactiveButton:hover {
+    background-color: #4e270d;
+    cursor: pointer;
+}

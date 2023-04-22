@@ -25,9 +25,15 @@ export const router = createBrowserRouter([
                 path: "/app/classement",
                 element: <Classement />,
                 loader: async () => {
-                    const response = await fetch("https://ergast.com/api/f1/2023/driverStandings.json")
-                    if(response.ok){
-                        return await response.json(); 
+                    const [driverStandingsResponse, constructorStandingsResponse] = await Promise.all([
+                        fetch("https://ergast.com/api/f1/2023/driverStandings.json"),
+                        fetch("https://ergast.com/api/f1/2023/constructorStandings.json")
+                    ]);
+            
+                    if(driverStandingsResponse.ok && constructorStandingsResponse.ok){
+                        const driverStandings = await driverStandingsResponse.json();
+                        const constructorStandings = await constructorStandingsResponse.json();
+                        return { driverStandings, constructorStandings };
                     }                     
                 }
             },
