@@ -4,6 +4,9 @@ import Card from "../assets/components/Card/Card";
 import RowActu from "../assets/components/RowActu/RowActu";
 import style from "./Home.module.css"
 import NextRace from "../assets/components/NextRace/NextRace";
+import historyImg from "/src/assets/images/1950f1.jpg";
+import rankingImg from "/src/assets/images/classement.jpg";
+import circuitsImg from "/src/assets/images/circuit.jpg"
 
 const Home = () => {
     
@@ -27,17 +30,17 @@ const Home = () => {
                 <Card 
                     name="Classement"
                     target="/app/classement"
-                    image="/src/assets/images/classement.jpg"
+                    image={rankingImg}
                 />
                 <Card 
                     name="Circuits"
                     target="/"
-                    image="/src/assets/images/circuit.jpg"
+                    image={circuitsImg}
                 />
                 <Card 
                     name="Historique"
                     target="/app/historique"
-                    image="/src/assets/images/1950f1.jpg"
+                    image={historyImg}
                 />    
             </div>
             <NextRace />
