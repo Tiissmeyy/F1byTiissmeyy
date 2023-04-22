@@ -5,7 +5,7 @@ const News = () => {
     return (
         <div className={style.articleContainer}>
             <img 
-                src="/src/assets/images/article-img/verstappen.jpeg" 
+                src="../../images/article-img/verstappen.jpeg" 
                 className={style.articleImage}    
             />
             <div>
