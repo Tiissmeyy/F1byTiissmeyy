@@ -1,0 +1,14 @@
+.burgerContainer {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerContainer:hover {
+    cursor: pointer;
+    color: red;
+    border-color: red;
+}

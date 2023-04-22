@@ -1,0 +1,21 @@
+.genericRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rowArticles {
+    display: grid;
+    gap: 10px 5%;
+    grid-template-columns: repeat(2, 2fr);
+    width: 80%;
+}
+
+.rowTitle {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 950px) {
+    .rowArticles { grid-template-columns: repeat(1, 1fr); }
+  }

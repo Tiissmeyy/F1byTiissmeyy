@@ -1,0 +1,21 @@
+
+.dateContainer {
+    display: flex;
+}
+
+.date {
+    white-space: nowrap;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: #111
+}
+
+.event {
+    width: 100%;
+}

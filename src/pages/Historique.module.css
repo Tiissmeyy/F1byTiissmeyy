@@ -1,0 +1,6 @@
+.datesContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 50px 30px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "f1new",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.0"
+  }
+}

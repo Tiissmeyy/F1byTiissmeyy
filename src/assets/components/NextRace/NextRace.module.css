@@ -1,0 +1,41 @@
+.nextRaceBorder{
+    margin-bottom: 40px;
+}
+
+.nextRaceContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #111;
+    padding: 20px 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.nextRaceContainer p {
+    margin: 0;
+}
+
+.nextRace {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nextRaceTitle {
+    width: 100%;
+}
+
+.inlineDate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nextRaceTimeBeforeRace {
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    justify-content: center;
+}

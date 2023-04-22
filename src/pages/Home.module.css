@@ -1,0 +1,23 @@
+.homeTitle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.homeTitleBM {
+    color: yellow;
+}
+
+.cardsContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+
+.whiteBand {
+    height: 15px;
+    background-color: #222;
+    border-top: 15px dashed red;
+    margin-bottom: 0;
+}

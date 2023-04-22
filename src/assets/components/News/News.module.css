@@ -1,0 +1,6 @@
+.articleImage {
+    float: left;
+    image-rendering: optimizeQuality;
+    border-radius: 3px;
+    margin-right: 15px;
+}

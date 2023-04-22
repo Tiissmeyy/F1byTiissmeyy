@@ -1,0 +1,34 @@
+.bodyTableLine td {
+    text-align: center;
+    width: 200px;
+    border-bottom: 1px solid #555;
+}
+
+.headTableLine {
+    background-color: #fa7d29;
+    color: #222;
+}
+
+.table{
+    border: 1px solid #fa7d29;
+    margin-bottom: 40px;
+}
+
+.classementTitle{
+    margin-bottom: 30px;
+}
+
+.selectorContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.selectorContainer label {
+    margin-right: 15px;
+}
+
+.selectorContainer input  {
+    margin-right: 15px;
+}
