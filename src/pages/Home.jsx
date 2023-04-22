@@ -12,11 +12,11 @@ const Home = () => {
     
     return (
         <>
-            <h1 className={`${style.homeTitle}`}>Bienvenue sur le site numéro 1 sur la F1</h1>
+            <h1 className={`${style.homeTitle}`}>Welcome to the number 1 site on F1</h1>
             {/* Bandeau d'actualité */}
             <RowActu
                 width="100%"  
-                title="Dernière actualité"
+                title="Latest News"
                 background="white"
                 padding="20px 0px"
             >
@@ -28,7 +28,7 @@ const Home = () => {
             {/* Bandeau de navigation */}
             <div className={style.cardsContainer}>
                 <Card 
-                    name="Classement"
+                    name="Ranking"
                     target="/app/classement"
                     image={rankingImg}
                 />
@@ -38,7 +38,7 @@ const Home = () => {
                     image={circuitsImg}
                 />
                 <Card 
-                    name="Historique"
+                    name="Historical"
                     target="/app/historique"
                     image={historyImg}
                 />    

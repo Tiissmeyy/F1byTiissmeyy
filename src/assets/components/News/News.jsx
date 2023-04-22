@@ -10,8 +10,8 @@ const News = () => {
                 className={style.articleImage}    
             />
             <div>
-                <h3>Nouveau coups dur pour RedBull Racing</h3>
-                <p className={style.articleText}>Malgré un fin de course extraordinaire, Red Bull manque la première place en raison d'une panne du système ERS à deux tours de l'arrivée</p>
+                <h3>New setbacks for RedBull Racing</h3>
+                <p className={style.articleText}>Despite an extraordinary finish, Red Bull misses out on first place due to an ERS system failure two laps from the finish</p>
             </div>
         </div>
     )

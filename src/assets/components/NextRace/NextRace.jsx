@@ -71,14 +71,14 @@ const NextRace = () => {
             <Corner />
             <div className={`${style.nextRaceContainer}`}>
                 <div className={`${style.nextRace}`}>
-                    <h2 className={`${style.nextRaceTitle}`}>Prochaine course : {nextRaceInfos.raceName}</h2>
+                    <h2 className={`${style.nextRaceTitle}`}>Next race : {nextRaceInfos.raceName}</h2>
                     {/* <h3>Circuit : {nextRaceInfos.Circuit.circuitName}</h3> */}
                     <div className={`${style.inlineDate}`}>
                         <h3>Date : {moment(nextRaceInfos.date).format("DD[th] MMMM YYYY")}</h3>
                         {/* <DateDisplay timestamp={1682852400000} />  */}
                     </div>
                 </div>
-                <p className={`${style.nextRaceTimeBeforeRace}`}>Départ dans : <br/> {convertMsToTime(timeBeforeRace)}</p>
+                <p className={`${style.nextRaceTimeBeforeRace}`}>Start of the race in : <br/> {convertMsToTime(timeBeforeRace)}</p>
             </div>
             <Corner />
         </section>

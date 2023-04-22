@@ -10,9 +10,9 @@ function Header() {
 
   const menuHeader = (
     <nav className='header-link-container'>
-      <Link to="/app/home" className={location.pathname === '/app/home' ? 'active-header-link' : 'header-link'}>Accueil</Link>
-      <Link to="/app/classement" className={location.pathname === '/app/classement' ? 'active-header-link' : 'header-link'}>Classement</Link>
-      <Link to="/app/historique" className={location.pathname === '/app/historique' ? 'active-header-link' : 'header-link'}>Historique</Link>
+      <Link to="/app/home" className={location.pathname === '/app/home' ? 'active-header-link' : 'header-link'}>Home</Link>
+      <Link to="/app/classement" className={location.pathname === '/app/classement' ? 'active-header-link' : 'header-link'}>Ranking</Link>
+      <Link to="/app/historique" className={location.pathname === '/app/historique' ? 'active-header-link' : 'header-link'}>Historical</Link>
       <Link to="/app/contact" className={location.pathname === '/app/contact' ? 'active-header-link' : 'header-link'}>Contact</Link>
     </nav>
   )

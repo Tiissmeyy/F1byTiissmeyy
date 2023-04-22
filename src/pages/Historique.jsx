@@ -8,13 +8,13 @@ const Historique = () => {
     
     const dateElements = date.dates.map((el, index)=> {
         return(
-            <DateElement key={index} date={el.date} event={el.evenement} />
+            <DateElement key={index} date={el.date} event={el.event} />
         )
     })
 
     return (
         <div className={style.datesContainer}>
-            <h1 style={{textAlign:"center"}}>Histoire de la Formule 1</h1>
+            <h1 style={{textAlign:"center"}}>Formula 1 history</h1>
             {dateElements}
         </div>
     )

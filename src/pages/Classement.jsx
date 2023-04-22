@@ -54,16 +54,16 @@ const Classement = () => {
 
     return (
         <>
-            <h1 className={style.classementTitle}>Classement saison {currentYear}</h1>
+            <h1 className={style.classementTitle}>Ranking season {currentYear}</h1>
             <section>
                 <table className={style.table}>
                     <thead>
                         <tr className={style.headTableLine}>
                             <th>Position</th>
                             <th>Name</th>
-                            <th>Ecurie</th>
+                            <th>Team</th>
                             <th>Points</th>
-                            <th>Victoires</th>
+                            <th>Wins</th>
                         </tr>
                     </thead>
                     <tbody>
