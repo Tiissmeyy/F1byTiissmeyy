@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
                 path: "/app/classement",
                 element: <Classement />,
                 loader: async () => {
-                    const response = await fetch("http://ergast.com/api/f1/2023/driverStandings.json")
+                    const response = await fetch("https://ergast.com/api/f1/2023/driverStandings.json")
                     if(response.ok){
                         return await response.json(); 
                     }                     
