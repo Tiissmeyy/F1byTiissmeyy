@@ -5,12 +5,6 @@ import Footer from './assets/components/generics/Footer/Footer'
 import Main from './assets/components/generics/Main/Main'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  window.onscroll = () => {
-    console.log("scroll")
-  }
-
   return (
     <>
       <Header />
