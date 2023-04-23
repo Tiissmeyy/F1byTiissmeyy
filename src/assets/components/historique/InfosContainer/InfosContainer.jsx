@@ -6,7 +6,7 @@ const InfosContainer = (props) => {
 
     useEffect(()=>{
         const getYearData = async () => {
-            const response = await fetch("https://ergast.com/api/f1/2015.json")
+            const response = await fetch(`https://ergast.com/api/f1/${props.year}.json`)
             if(response.ok){
                 const body = await response.json()
                 setData(body.MRData.RaceTable.Races)
@@ -15,15 +15,24 @@ const InfosContainer = (props) => {
         getYearData()
     }, [])
 
-    useEffect(()=> {
-        console.log(data)
-    },[data])
+    let racesList
+    if(data.length>0){
+        racesList = data.map(el => {
+            return (
+                <div className={style.raceElement}>
+                    <p>{el.round}</p>
+                    <p>{el.raceName}</p>
+                </div>
+            )
+        })
+    }
 
     return (
         <div 
             className={style.infosContainer}
         >
-            <p onClick={props.onclick}  >infosContainer</p>
+            <p onClick={props.onclick}>{props.year} season results</p>
+            {racesList}
         </div>
     )
 }
