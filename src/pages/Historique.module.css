@@ -1,6 +1,51 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .datesContainer {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    padding: 50px 30px;
+    max-width: 700px;
+    height: 100%;
 }
+
+.cardsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.gridContainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seasonContainer{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 40px;
+}
+
+.dateButton {
+    background-color: #fa7d29;
+    color: #222;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.03rem;
+}
+
+.dateButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .seasonContainer { grid-template-columns: repeat(8, 1fr); }
+  }

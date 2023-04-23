@@ -21,6 +21,13 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
+    padding: 8px;
+  }
+
+  .navLink:hover{
+    color: white;
+    background-color: red;
+    border-radius: 8px;
   }
 
   .copyRight {
