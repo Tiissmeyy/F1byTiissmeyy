@@ -15,6 +15,7 @@ const NextRace = () => {
           "https://ergast.com/api/f1/current/next.json"
         ).then((res) => res.json());
         setNextRaceInfos(response.MRData.RaceTable.Races[0]);
+        console.log(response)
       } catch (e) {
         console.log(`erreur dans le chargement de la prochaine course : ${e}`);
       }
